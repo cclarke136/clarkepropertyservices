@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clarke Property Services | Handyman in Eastern Suburbs, Inner West & Lower North Shore Sydney</title>
-    <meta name="description" content="Professional handyman and property services in the Eastern Suburbs, Inner West and Lower North Shore.">
+    <title>Clarke Property Services | Handyman & Property Maintenance Sydney</title>
+    <meta name="description" content="Book a dedicated handyman for half-day or full-day property maintenance across Sydney's Eastern Suburbs, Inner West and Lower North Shore.">
 
     <meta property="og:title" content="Clarke Property Services">
-    <meta property="og:description" content="Professional handyman and property services in the Eastern Suburbs, Inner West and Lower North Shore.">
+    <meta property="og:description" content="Dedicated handyman visits for homeowners, landlords and property managers across Sydney.">
     <meta property="og:image" content="https://clarkepropertyservices.com.au/resources/logo.png">
     <meta property="og:url" content="https://clarkepropertyservices.com.au">
 
-        
     <link rel="icon" href="resources/favicon.png?v=4" type="image/png">
     <link rel="icon" href="resources/favicon.svg?v=4" type="image/svg+xml">
     <link rel="apple-touch-icon" href="resources/apple-touch-icon.png?v=4">
@@ -105,7 +104,7 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.3);
         }
 
-        /* About Section - Now Near Top */
+        /* About Section */
         .about {
             padding: 80px 0;
             background: white;
@@ -164,10 +163,88 @@
             color: #2d5016;
         }
 
+        /* Booking Section */
+        .booking {
+            padding: 80px 0;
+            background: #f8f8f8;
+        }
+
+        .booking-intro {
+            max-width: 850px;
+            margin: 0 auto 50px;
+            text-align: center;
+            color: #555;
+            font-size: 1.1rem;
+        }
+
+        .booking-options {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .booking-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .booking-card.featured {
+            border: 2px solid #2d5016;
+        }
+
+        .booking-card h3 {
+            color: #2d5016;
+            font-size: 1.7rem;
+            margin-bottom: 15px;
+        }
+
+        .booking-card p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .booking-card ul {
+            list-style: none;
+            text-align: left;
+            margin-bottom: 25px;
+        }
+
+        .booking-card li {
+            padding: 8px 0 8px 25px;
+            position: relative;
+            color: #444;
+        }
+
+        .booking-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #2d5016;
+            font-weight: bold;
+        }
+
+        .booking-note {
+            max-width: 850px;
+            margin: 40px auto 0;
+            background: white;
+            border-left: 4px solid #2d5016;
+            padding: 20px 25px;
+            border-radius: 5px;
+            color: #555;
+            font-size: 0.98rem;
+        }
+
         /* Services Section */
         .services {
             padding: 80px 0;
-            background: #f8f8f8;
+            background: white;
         }
 
         .section-title {
@@ -187,7 +264,7 @@
         .services-list {
             max-width: 900px;
             margin: 0 auto 50px;
-            background: white;
+            background: #f8f8f8;
             padding: 40px;
             border-radius: 10px;
             box-shadow: 0 3px 10px rgba(0,0,0,0.1);
@@ -225,7 +302,7 @@
         }
 
         .client-type {
-            background: white;
+            background: #f8f8f8;
             padding: 40px;
             border-radius: 10px;
             box-shadow: 0 3px 10px rgba(0,0,0,0.1);
@@ -244,18 +321,9 @@
             font-size: 1.05rem;
         }
 
-        .pricing {
-            background: #2d5016;
-            color: white;
-            padding: 20px;
-            border-radius: 5px;
-            font-size: 1.3rem;
-            font-weight: 600;
-        }
-
         .contact-cta {
             display: inline-block;
-            background: #f8f8f8;
+            background: white;
             color: #2d5016;
             padding: 20px;
             border-radius: 5px;
@@ -276,7 +344,7 @@
         /* Work Gallery */
         .gallery {
             padding: 80px 0;
-            background: white;
+            background: #f8f8f8;
         }
 
         .gallery-grid {
@@ -328,7 +396,6 @@
         .gallery-item:hover .gallery-caption {
             opacity: 1;
         }
-
 
         /* Service Areas */
         .service-areas {
@@ -413,6 +480,10 @@
                 grid-template-columns: 1fr;
             }
 
+            .booking-options {
+                grid-template-columns: 1fr;
+            }
+
             .gallery-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
@@ -443,31 +514,28 @@
         }
 
         /* Mobile tweaks for contact info */
-    @media (max-width: 768px) {
-        /* Allow long emails to wrap and add some padding */
-        .contact-header a,
-        .contact-item a {
-            word-break: break-word;
-            overflow-wrap: anywhere;
+        @media (max-width: 768px) {
+            .contact-header a,
+            .contact-item a {
+                word-break: break-word;
+                overflow-wrap: anywhere;
+            }
+        
+            .contact-header,
+            .contact-item {
+                padding: 0 10px;
+            }
+        
+            .header-content {
+                flex-direction: column;
+                align-items: center;
+            }
+        
+            .contact-header {
+                margin-top: 15px;
+                text-align: center;
+            }
         }
-    
-        .contact-header,
-        .contact-item {
-            padding: 0 10px;
-        }
-    
-        /* Stack phone and email neatly under the logo */
-        .header-content {
-            flex-direction: column;
-            align-items: center;
-        }
-    
-        .contact-header {
-            margin-top: 15px;
-            text-align: center;
-        }
-    }
-            
     </style>
 </head>
 <body>
@@ -487,9 +555,9 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1>Expert Problem Solving. Quality Workmanship. Reliable Service.</h1>
-            <p>Professional property maintenance and repairs across Sydney's Eastern Suburbs, Inner West & Lower North Shore</p>
-            <a href="#contact" class="cta-button">Get In Touch</a>
+            <h1>Book a Dedicated Handyman for the Jobs on Your List</h1>
+            <p>Half-day and full-day property maintenance visits across Sydney's Eastern Suburbs, Inner West & Lower North Shore</p>
+            <a href="#booking" class="cta-button">See How It Works</a>
         </div>
     </section>
 
@@ -500,7 +568,8 @@
                 <img src="resources/profile.webp" alt="Charlie Clarke" class="profile-photo">
                 <div class="about-text">
                     <h2>Hi, I'm Charlie Clarke</h2>
-                    <p>With a mechanical engineering degree and 5 years of experience in property maintenance, I provide comprehensive property solutions that eliminate the need for multiple trades. My engineering background means I can diagnose problems accurately and tackle diverse jobs — from custom installations to painting to repairs — all in one visit.</p>
+                    <p>With a mechanical engineering degree and 5 years of experience in property maintenance, I provide practical, well-organised property solutions that reduce the need to coordinate multiple trades.</p>
+                    <p>My engineering background means I can diagnose problems accurately and work through a range of tasks efficiently — from repairs and installations to painting, maintenance and small projects — during a dedicated visit.</p>
                     <div class="credentials">
                         <div class="credential">
                             <strong>Mechanical Engineering Degree</strong>
@@ -522,11 +591,66 @@
         </div>
     </section>
 
+    <!-- Booking Section -->
+    <section class="booking" id="booking">
+        <div class="container">
+            <h2 class="section-title">Half-Day & Full-Day Visits</h2>
+            <p class="booking-intro">
+                Instead of trying to fit everything into one small callout, book a dedicated block of time.
+                It is ideal when you have several jobs, a project to progress, or ongoing maintenance that needs
+                to be done properly and efficiently.
+            </p>
+
+            <div class="booking-options">
+                <div class="booking-card">
+                    <h3>Half-Day Visit</h3>
+                    <p>A focused block of time for a manageable list of repairs, installations and maintenance tasks.</p>
+                    <ul>
+                        <li>Dedicated time on site</li>
+                        <li>Multiple tasks completed in one visit</li>
+                        <li>Great for planned maintenance</li>
+                        <li>Perfect for a punch list of smaller jobs</li>
+                    </ul>
+                    <a href="#contact" class="contact-cta">Enquire About Availability</a>
+                </div>
+
+                <div class="booking-card featured">
+                    <h3>Full-Day Visit</h3>
+                    <p>The best option for larger job lists, ongoing property work or projects where having the right tools, materials and time on site makes a real difference.</p>
+                    <ul>
+                        <li>A full working day dedicated to your property</li>
+                        <li>Flexible task list agreed before the visit</li>
+                        <li>Ideal for homeowners, landlords and property managers</li>
+                        <li>Efficient way to progress multiple jobs</li>
+                    </ul>
+                    <a href="#contact" class="contact-cta">Enquire About Availability</a>
+                </div>
+
+                <div class="booking-card">
+                    <h3>Short Callouts</h3>
+                    <p>For smaller or urgent single-item jobs, limited short callouts may be available around existing bookings.</p>
+                    <ul>
+                        <li>Subject to availability</li>
+                        <li>Best suited to quick repairs and minor tasks</li>
+                        <li>Existing clients may be prioritised</li>
+                        <li>Can sometimes be fitted around day bookings</li>
+                    </ul>
+                    <a href="#contact" class="contact-cta">Ask About Availability</a>
+                </div>
+            </div>
+
+            <div class="booking-note">
+                <strong>Bookings & cancellations:</strong> Visit length, availability and pricing are confirmed when you get in touch.
+                Confirmed bookings may require a deposit, and a cancellation fee may apply for late cancellations or reschedules.
+            </div>
+        </div>
+    </section>
+
     <!-- Services Section -->
     <section class="services">
         <div class="container">
-            <h2 class="section-title">What I Do</h2>
-            <p class="section-subtitle">Comprehensive property maintenance and repair services</p>
+            <h2 class="section-title">What I Can Help With</h2>
+            <p class="section-subtitle">Property maintenance, repairs and small projects — often completed across a single dedicated visit</p>
             
             <div class="services-list">
                 <ul>
@@ -552,12 +676,12 @@
             <div class="client-types">
                 <div class="client-type">
                     <h3>For Property Managers & Agents</h3>
-                    <p>Reliable service to keep your properties maintained and tenants happy. I understand the urgency of rental property repairs and eliminate the need to coordinate multiple contractors.</p>
+                    <p>Reliable half-day or full-day visits to keep properties maintained and tenants happy. Ideal for working through maintenance lists, preparing properties and reducing the need to coordinate multiple contractors.</p>
                     <a href="#contact" class="contact-cta">Get In Touch</a>
                 </div>
                 <div class="client-type">
                     <h3>For Homeowners</h3>
-                    <p>From small fixes to larger projects, I provide quality workmanship and honest advice for your home maintenance needs.</p>
+                    <p>Book a dedicated visit for the jobs you have been putting off. From a list of small repairs to a larger maintenance project, I provide quality workmanship and honest advice.</p>
                     <a href="#contact" class="contact-cta">Get In Touch</a>
                 </div>
             </div>
@@ -607,8 +731,8 @@
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
-            <h2>Let's Get Started</h2>
-            <p>Call or email today to see how I can help with your property maintenance needs</p>
+            <h2>Check Availability</h2>
+            <p>Send through your job list or give me a call, and I will let you know whether a half-day or full-day visit is the best fit.</p>
             <div class="contact-details">
                 <div class="contact-item">
                     <strong>Phone:</strong><br>
