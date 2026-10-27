@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clarke Property Services | Handyman in Eastern Suburbs, Inner West & Lower North Shore Sydney</title>
-    <meta name="description" content="Professional handyman and property services in the Eastern Suburbs, Inner West and Lower North Shore.">
+    <meta name="description" content="Property maintenance, repairs and home improvements across Sydney’s Eastern Suburbs, Inner West and Lower North Shore. Book a half-day or full day to get your list of jobs sorted.">
 
     <meta property="og:title" content="Clarke Property Services">
-    <meta property="og:description" content="Professional handyman and property services in the Eastern Suburbs, Inner West and Lower North Shore.">
+    <meta property="og:description" content="Book a half-day or full day with Clarke Property Services to get your property maintenance list sorted across Sydney.">
     <meta property="og:image" content="https://clarkepropertyservices.com.au/resources/logo.png">
     <meta property="og:url" content="https://clarkepropertyservices.com.au">
 
@@ -390,6 +390,106 @@
             padding: 20px 0;
         }
 
+
+        /* Day-booking pricing */
+        .booking-intro {
+            max-width: 850px;
+            margin: 0 auto 35px;
+            text-align: center;
+            color: #555;
+            font-size: 1.1rem;
+        }
+
+        .booking-options {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 25px;
+            max-width: 850px;
+            margin: 0 auto 30px;
+        }
+
+        .booking-option {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            border-top: 5px solid #2d5016;
+        }
+
+        .booking-option h3 {
+            color: #2d5016;
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+        }
+
+        .booking-price {
+            color: #2d5016;
+            font-size: 2.3rem;
+            font-weight: 700;
+            line-height: 1.3;
+            margin: 12px 0 4px;
+        }
+
+        .booking-duration {
+            color: #666;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .booking-option p {
+            color: #555;
+        }
+
+        .booking-note {
+            max-width: 850px;
+            margin: 0 auto;
+            text-align: center;
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        .list-examples {
+            max-width: 850px;
+            margin: 30px auto 0;
+            padding: 25px 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .list-examples h3 {
+            color: #2d5016;
+            margin-bottom: 12px;
+        }
+
+        .list-examples ul {
+            margin-left: 22px;
+            color: #555;
+            columns: 2;
+            column-gap: 35px;
+        }
+
+        .list-examples li {
+            margin-bottom: 7px;
+            break-inside: avoid;
+        }
+
+        .form-note {
+            max-width: 760px;
+            margin: 0 auto 25px;
+            font-size: 1.05rem;
+        }
+
+        @media (max-width: 768px) {
+            .booking-options {
+                grid-template-columns: 1fr;
+            }
+            .list-examples ul {
+                columns: 1;
+            }
+        }
+
         /* Responsive */
         @media (max-width: 968px) {
             .about-content {
@@ -487,9 +587,9 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1>Expert Problem Solving. Quality Workmanship. Reliable Service.</h1>
-            <p>Professional property maintenance and repairs across Sydney's Eastern Suburbs, Inner West & Lower North Shore</p>
-            <a href="#contact" class="cta-button">Get In Touch</a>
+            <h1>Get Your Property To-Do List Sorted</h1>
+            <p>Book a half-day or full day for the repairs, maintenance and improvements you’ve been meaning to get done.</p>
+            <a href="#booking" class="cta-button">View Booking Options</a>
         </div>
     </section>
 
@@ -500,7 +600,8 @@
                 <img src="resources/profile.webp" alt="Charlie Clarke" class="profile-photo">
                 <div class="about-text">
                     <h2>Hi, I'm Charlie Clarke</h2>
-                    <p>With a mechanical engineering degree and 5 years of experience in property maintenance, I provide comprehensive property solutions that eliminate the need for multiple trades. My engineering background means I can diagnose problems accurately and tackle diverse jobs — from custom installations to painting to repairs — all in one visit.</p>
+                    <p>With a mechanical engineering degree and 5 years of experience in property maintenance, I help homeowners and property managers get a range of jobs done in one visit. My engineering background helps me diagnose problems and tackle varied work — from carpentry and installations to painting and general repairs — without you having to coordinate a different person for every task.</p>
+                    <p>Have a list of things that need attention around the property? Send it through and we can work out whether a half-day or full-day booking makes sense.</p>
                     <div class="credentials">
                         <div class="credential">
                             <strong>Mechanical Engineering Degree</strong>
@@ -522,11 +623,54 @@
         </div>
     </section>
 
+
+    <!-- Day Booking Section -->
+    <section class="services" id="booking">
+        <div class="container">
+            <h2 class="section-title">Book Time. Get Your List Sorted.</h2>
+            <p class="booking-intro">A practical way to get on top of the jobs around your home or property. Send me your list first, and I’ll review the work and let you know whether it’s a good fit.</p>
+
+            <div class="booking-options">
+                <div class="booking-option">
+                    <h3>Half-Day Booking</h3>
+                    <div class="booking-price">$340</div>
+                    <div class="booking-duration">4 hours</div>
+                    <p>Ideal for a shorter list of repairs, installations and maintenance tasks.</p>
+                </div>
+                <div class="booking-option">
+                    <h3>Full-Day Booking</h3>
+                    <div class="booking-price">$640</div>
+                    <div class="booking-duration">8 hours</div>
+                    <p>Best value when you have a longer list and want to get more done in one visit.</p>
+                </div>
+            </div>
+
+            <p class="booking-note">Booking time is on site; travel is excluded. Materials and any agreed additional costs are separate. The amount of work completed depends on the tasks, access, materials and any unexpected issues.</p>
+
+            <div class="list-examples">
+                <h3>What could be on your list?</h3>
+                <ul>
+                    <li>Adjust doors and replace hardware</li>
+                    <li>Install shelves, hooks or storage</li>
+                    <li>Patch and paint damaged walls</li>
+                    <li>Fix gates, fences or screens</li>
+                    <li>Repair fittings and general wear</li>
+                    <li>Handle a few small carpentry jobs</li>
+                    <li>Complete maintenance before a move or inspection</li>
+                    <li>Work through those jobs you’ve been putting off</li>
+                </ul>
+            </div>
+            <div style="text-align:center; margin-top:30px;">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSePfxGsuXDFBxb-hk0bW0bqtQsO1lLGhMaAhWjN_kv6Sb7jzQ/viewform?usp=dialog" class="contact-cta" target="_blank" rel="noopener noreferrer">Send Me Your Job List</a>
+            </div>
+        </div>
+    </section>
+
     <!-- Services Section -->
     <section class="services">
         <div class="container">
             <h2 class="section-title">What I Do</h2>
-            <p class="section-subtitle">Comprehensive property maintenance and repair services</p>
+            <p class="section-subtitle">A wide range of jobs handled in one organised booking</p>
             
             <div class="services-list">
                 <ul>
@@ -552,13 +696,13 @@
             <div class="client-types">
                 <div class="client-type">
                     <h3>For Property Managers & Agents</h3>
-                    <p>Reliable service to keep your properties maintained and tenants happy. I understand the urgency of rental property repairs and eliminate the need to coordinate multiple contractors.</p>
-                    <a href="#contact" class="contact-cta">Get In Touch</a>
+                    <p>Reliable maintenance across your property portfolio. Send through a list of outstanding tasks at a property and I’ll review whether they’re suited to a half-day or full-day visit.</p>
+                    <a href="#booking" class="contact-cta">View Booking Options</a>
                 </div>
                 <div class="client-type">
                     <h3>For Homeowners</h3>
-                    <p>From small fixes to larger projects, I provide quality workmanship and honest advice for your home maintenance needs.</p>
-                    <a href="#contact" class="contact-cta">Get In Touch</a>
+                    <p>Got a list of repairs, installations and improvements piling up? Book a block of time and get through as much as practical in one visit, without having to organise several different trades.</p>
+                    <a href="#booking" class="contact-cta">View Booking Options</a>
                 </div>
             </div>
         </div>
@@ -607,11 +751,13 @@
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
-            <h2>Let's Get Started</h2>
-            <p>Call or email today to see how I can help with your property maintenance needs</p>
+            <h2>Tell Me What Needs Doing</h2>
+            <p class="form-note">Send me your job list, your suburb and any helpful photos. I’ll review the details and get back to you about whether the work suits a half-day or full-day booking.</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSePfxGsuXDFBxb-hk0bW0bqtQsO1lLGhMaAhWjN_kv6Sb7jzQ/viewform?usp=dialog" class="cta-button" target="_blank" rel="noopener noreferrer">Submit Your Job List</a>
+            <p style="font-size:0.95rem; margin-top:18px; margin-bottom:25px;">An enquiry isn’t a confirmed booking. I’ll be in touch to discuss the next steps.</p>
             <div class="contact-details">
                 <div class="contact-item">
-                    <strong>Phone:</strong><br>
+                    <strong>Prefer to call?</strong><br>
                     <a href="tel:0403574823">0403 574 823</a>
                 </div>
                 <div class="contact-item">
@@ -625,7 +771,7 @@
     <!-- Footer -->
     <footer>
        <div class="container">
-            <p>&copy; 2025 Clarke Property Services &nbsp;|&nbsp; ABN 95 197 230 278 &nbsp;|&nbsp; NSW Contractor's Licence No. 492258C</p>
+            <p>&copy; 2026 Clarke Property Services &nbsp;|&nbsp; ABN 95 197 230 278 &nbsp;|&nbsp; NSW Contractor's Licence No. 492258C</p>
         </div>
     </footer>
 
